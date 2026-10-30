@@ -1,37 +1,8 @@
 /**
- * Google AI Plus Portal — Interactive Landing Page Script
- * Handles direct executable downloads, mobile navigation, and clipboard copy.
+ * Gab's Google AI Plus Portal — Interactive Landing Page Script
+ * Web-based edition — no application download required.
+ * Handles mobile navigation and clipboard copy functionality.
  */
-
-// Configuration Object
-// Points to the public release repository and direct asset downloads:
-const CONFIG = {
-	// Direct file download URL — initiates immediate file download in browser
-	DIRECT_DOWNLOAD_URL:
-		"https://github.com/nmrisrl11/gemini-ai-plus-claimer-app/releases/download/v1.0.0/Gemini.AI.Plus.for.1-Year.Automated.Claimer.by.nmrisrl11.zip",
-	// Alternative standalone exe URL:
-	DIRECT_EXE_URL:
-		"https://github.com/nmrisrl11/gemini-ai-plus-claimer-app/releases/download/v1.0.0/Google%20AI%20Plus%20Portal%20v1.0.0.exe",
-	// Releases hub page:
-	RELEASES_URL: "https://github.com/nmrisrl11/gemini-ai-plus-claimer-app/releases",
-	RELEASE_TAG_URL: "https://github.com/nmrisrl11/gemini-ai-plus-claimer-app/releases/tag/v1.0.0",
-	DEVELOPER_PROFILE: "https://github.com/nmrisrl11",
-	VERSION: "v1.0.0",
-};
-
-// Wire all direct download buttons
-document.querySelectorAll(".direct-download-link").forEach((link) => {
-	if (CONFIG.DIRECT_DOWNLOAD_URL) {
-		link.href = CONFIG.DIRECT_DOWNLOAD_URL;
-	}
-});
-
-// Wire releases page links
-document.querySelectorAll(".releases-link").forEach((link) => {
-	if (CONFIG.RELEASES_URL) {
-		link.href = CONFIG.RELEASES_URL;
-	}
-});
 
 // Mobile Drawer Navigation
 const mobileMenuBtn = document.getElementById("mobile-menu-btn");
